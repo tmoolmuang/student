@@ -1,2 +1,21 @@
-<h1>Courses#new</h1>
-<p>Find me in app/views/courses/new.html.erb</p>
+<div>
+  <%= link_to("<< Back to List", courses_path) %>
+  <div>
+    <h3>Create New Course</h3>
+    <%= form_for @course do |f| %>
+      <table>
+        <tr>
+          <th>Name</th>
+          <td class="form-edit"><%= f.text_field(:name) %></td>
+        </tr>
+        <tr>
+          <th>Description</th>
+          <td class="form-edit"><%= f.text_field(:description) %></td>
+        </tr>
+      </table>
+      <div class="button-save">
+        <%= submit_tag("Create Course") %>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div>
+  <%= link_to("<< Back to Student", student_path(@student_course.student)) %>
+  <div>
+    <h3>Create New Power</h3>
+    <%= form_for [@student_course.student, @student_course] do |f| %>
+      <table>
+        <tr>
+        	<th>Course</th>
+        	<td> <%= f.select :course_id, options_for_select(@courses.collect { |c| [c.name, c.id] }), :include_blank => " -- select -- " %></td>
+          <th>Note</th>
+          <td class="form-edit"><%= f.text_field(:note) %></td>
+        </tr>
+      </table>
+      <div class="button-save">
+        <%= submit_tag("Create Course") %>
+      </div>
+    <% end %>
+  </div>
+</div>

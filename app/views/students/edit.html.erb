@@ -1,2 +1,17 @@
-<h1>Students#edit</h1>
-<p>Find me in app/views/students/edit.html.erb</p>
+<div>
+  <%= link_to("<< Back to List", students_path) %>
+  <div>
+    <h3>Edit Student</h3>
+    <%= form_for [@student] do |f| %>
+      <table>
+        <tr>
+          <th>Name</th>
+          <td class="form-edit"><%= f.text_field(:name) %></td>
+        </tr>
+      </table>
+      <div class="button-save">
+        <%= submit_tag("Update Student") %>
+      </div>
+    <% end %>
+  </div>
+</div>
