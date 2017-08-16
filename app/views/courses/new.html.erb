@@ -3,7 +3,7 @@
   <div>
     <h3>Create New Course</h3>
     <%= form_for @course do |f| %>
-      <table>
+      <table class="table table-condensed">
         <tr>
           <th>Name</th>
           <td class="form-edit"><%= f.text_field(:name) %></td>
@@ -13,9 +13,7 @@
           <td class="form-edit"><%= f.text_field(:description) %></td>
         </tr>
       </table>
-      <div class="button-save">
-        <%= submit_tag("Create Course") %>
-      </div>
+      <%= f.submit "Create Course", class: "btn btn-primary" %>
     <% end %>
   </div>
 </div>

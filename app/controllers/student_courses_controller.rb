@@ -1,7 +1,4 @@
 class StudentCoursesController < ApplicationController
-  def show
-  end
-
   def new
     @student_course = Student.find(params[:student_id]).student_courses.new
     @courses = Course.all
@@ -16,7 +13,9 @@ class StudentCoursesController < ApplicationController
     end
   end
 
-  def edit
+  def destroy
+    @student_course = StudentCourse.find(params[:id]).destroy
+    redirect_to student_path(params[:student_id])
   end
 
  	private

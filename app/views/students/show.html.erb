@@ -2,16 +2,15 @@
   <%= link_to("<< Back to List", students_path) %>
   <div>
     <h3>Show Student</h3>
-    <table>
+    <table class="table table-condensed">
       <tr>
         <td>Name </td>
         <td><%= @student.name %></td>
       </tr>
     </table>
-    <hr>
     <div class="indent">
       <h4>Courses</h4>
-      <table>
+      <table class="table table-condensed">
         <%= link_to("Add a New Course", new_student_student_course_path(@student)) %>
         <tr>
           <th>&nbsp;</th>
@@ -25,7 +24,6 @@
           <td><%= s.course.name %></td>
           <td><%= s.note %></td>
           <td>
-            <%= link_to("Edit", edit_student_student_course_path(s.student, s)) %>
             <%= link_to("Delete", [s.student, s], method: :delete, data: { confirm: 'Are you sure you want to delete this course?' }) %>
           </td>
         </tr>
