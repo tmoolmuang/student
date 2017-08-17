@@ -12,7 +12,7 @@
   	<div class="container">
 	   	<ul class="nav nav-tabs">
 	      <li><%= link_to "Home", root_path %></li>
-	      <li><%= link_to "Records", home_index_path%></li>  
+	      <li><%= link_to "Records", records_path%></li>  
 				<li><%= link_to "Courses", courses_path %></li>  
 				<li><%= link_to "Students", students_path %></li>  
 	    </ul>
@@ -28,7 +28,7 @@
 	      </div>
 	    <% end %>
 		</div>
-		<div>
+		<div class="half">
     	<%= yield %>
   	</div>
   </body>

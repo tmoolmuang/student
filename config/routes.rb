@@ -1,11 +1,5 @@
 Rails.application.routes.draw do
   
-  get 'student_courses/show'
-
-  get 'student_courses/new'
-
-  get 'student_courses/edit'
-
   resources :students do
   	resources :student_courses
   end
@@ -13,6 +7,6 @@ Rails.application.routes.draw do
   resources :courses
 
   root 'home#about'
-  get 'home/index'
+  get 'home/index', to: 'student_courses#index', as: 'records'
 
 end

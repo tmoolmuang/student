@@ -1,4 +1,8 @@
 class StudentCoursesController < ApplicationController
+  def index
+    @student_courses = StudentCourse.all
+  end
+
   def new
     @student_course = Student.find(params[:student_id]).student_courses.new
     @courses = Course.all

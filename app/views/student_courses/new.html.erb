@@ -8,7 +8,7 @@
         	<th>Course</th>
         	<td> <%= f.select :course_id, options_for_select(@courses.collect { |c| [c.name, c.id] }), :include_blank => " -- select -- " %></td>
           <th>Note</th>
-          <td class="form-edit"><%= f.text_field(:note) %></td>
+          <td><%= f.text_field :note %></td>
         </tr>
       </table>
       <%= f.submit "Add Course", class: "btn btn-primary" %>
