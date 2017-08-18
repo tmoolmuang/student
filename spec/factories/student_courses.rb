@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :student_course do
-    note "MyString"
+    note "MyNote"
     student nil
     course nil
   end
