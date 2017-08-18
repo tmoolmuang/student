@@ -21,14 +21,14 @@ RSpec.describe StudentCoursesController, type: :controller do
   end
 
   describe "POST create" do
-    # it "returns http redirect to #index view" do
-    #   post :create, student_id: test_student.id, course_id: test_course.id, student_course: { note: "some notes" }
-    #   expect(response).to redirect_to student_path(test_student.id)
-    # end
+    it "returns http redirect to #index view" do
+      post :create, student_id: test_student.id, student_course: { course_id: test_course.id, note: "some notes" }
+      expect(response).to redirect_to student_path(test_student.id)
+    end
     
-    # it "increases the number of course by 1" do
-    #   expect{ post :create, student_id: test_student.id, course_id: test_course.id, student_course: { note: "some notes" } }.to change(StudentCourse, :count).by(1)
-    # end
+    it "increases the number of course by 1" do
+      expect{ post :create, student_id: test_student.id, student_course: { course_id: test_course.id, note: "some notes" } }.to change(StudentCourse, :count).by(1)
+    end
   end
 
   describe "DELETE destroy" do
