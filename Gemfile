@@ -17,6 +17,7 @@ gem 'bootstrap-sass'
 gem 'faker'         
 gem 'devise'      
 gem 'rack-cors', :require => 'rack/cors'
+gem 'coffee-script-source', '1.8.0' # downgrade for window
 
 group :development, :test do
 	gem 'sqlite3'
