@@ -14,7 +14,7 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass'    
-gem 'faker'         
+gem 'faker'   
 gem 'devise'      
 gem 'rack-cors', :require => 'rack/cors'
 gem 'coffee-script-source', '1.8.0' # downgrade for window
