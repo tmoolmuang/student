@@ -8,4 +8,6 @@ in progress
 
 * Windows 10 - 64bit
 
-![studentclassentity](https://user-images.githubusercontent.com/24881495/29546569-10a7d36e-86aa-11e7-98be-73694323c9c3.jpg)
+
+![studentcourses](https://user-images.githubusercontent.com/24881495/29548012-8a5378f0-86b2-11e7-9f22-c62b90d2206d.jpg)
+
