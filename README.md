@@ -1,4 +1,4 @@
-# Student Class [![Build Status](https://travis-ci.org/tmoolmuang/student.svg?branch=master)](https://travis-ci.org/tmoolmuang/student)
+# Students and Courses [![Build Status](https://travis-ci.org/tmoolmuang/student.svg?branch=master)](https://travis-ci.org/tmoolmuang/student)
 
 in progress
 
