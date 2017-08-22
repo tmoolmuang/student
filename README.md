@@ -1,4 +1,4 @@
-# Student Class
+# Student Class [![Build Status](https://travis-ci.org/tmoolmuang/student.svg?branch=master)](https://travis-ci.org/tmoolmuang/student)
 
 in progress
 
@@ -7,4 +7,6 @@ in progress
 * Rails version 5.0.5
 
 * Windows 10 - 64bit
+
+https://user-images.githubusercontent.com/24881495/29546569-10a7d36e-86aa-11e7-98be-73694323c9c3.jpg
 
