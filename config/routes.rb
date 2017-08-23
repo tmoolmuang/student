@@ -14,6 +14,7 @@ Rails.application.routes.draw do
         resources :student_courses
       end
       resources :courses
+      get 'records', to: 'student_courses#index'
     end
   end
 
